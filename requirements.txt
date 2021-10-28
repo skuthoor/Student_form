@@ -7,7 +7,7 @@ ConfigParser==5.0.2
 cryptography==35.0.0
 curio==1.5
 cx_Oracle==8.2.1
-Cython==0.29.24
+
 dl==0.1.0
 docutils==0.18
 flask_babel==2.0.0
