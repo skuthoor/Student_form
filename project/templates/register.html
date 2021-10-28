@@ -1,0 +1,87 @@
+{% extends "basic.html" %}
+
+{% block title%}
+  
+  Registration Page
+
+{% endblock %}
+
+{% block content_title%}
+  
+  Registration Page
+
+{% endblock %}
+
+{% block content%}
+
+	<body class="text-center">
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="container">
+			<div class="row">
+			  <div class="col">
+				
+	    <div class="container">
+	        <form method="POST" class="form-register" style="color:white">
+	        	{{form.hidden_tag()}}  <!-- protect from hackers -->
+	            <img class="mb-4" src="{{url_for('static',filename='assets/img/register_icon.jpeg')}} " alt="">
+	            <h1 class="h3 mb-4 font-weight-normal">
+	                Student Registration
+	            </h1>
+	            <br>
+	            {{ form.student_name.label() }}
+	            {{ form.student_name(class="form-control", placeholder=" Name") }}
+
+				{{ form.college_name.label() }}
+	            {{ form.college_name(class="form-control", placeholder="College Name") }}
+
+				{{ form.specialistion.label() }}
+	            {{ form.specialistion(class="form-control", placeholder=" specialistion") }}
+
+				{{ form.degree_name.label() }}
+	            {{ form.degree_name(class="form-control", placeholder=" degree_name") }}
+
+				{{ form.internship.label() }}
+	            {{ form.internship(class="form-control", placeholder=" internship") }}
+
+				{{ form.phone_no.label()}}
+	            {{ form.phone_no(class="form-control", placeholder="Mobile Number")}}
+
+	            {{ form.email_address.label() }}
+	            {{ form.email_address(class="form-control", placeholder="Email Address") }}
+
+	            {{ form.location.label()}}
+	            {{ form.location(class="form-control", placeholder="Location")}}
+
+				{{ form.Gender.label()}}
+	            {{ form.Gender(class="form-control", placeholder="Gender")}}
+
+				{{ form.note.label()}}
+	            {{ form.note(class="form-control", placeholder="note")}}
+
+	            
+
+	          
+	            <br>
+
+
+            	<!-- <div class="checkbox mb-3">
+               		<h6>Already have an account?</h6>
+               		<a class="btn btn-sm btn-secondary" href="#">Login</a>
+            	</div> -->
+
+            	{{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+            </form>
+        </div>
+		
+			  </div>
+			  </div>
+			  </div>
+			  
+    </body>
+    
+
+	
+{% endblock %}

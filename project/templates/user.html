@@ -1,0 +1,131 @@
+{% extends "basic.html" %}
+
+{% block title%}
+  
+  Student Registration
+
+{% endblock %}
+
+{% block content_title%}
+
+  
+  <br>
+  <br>
+  <br>
+    User Details
+  <br>
+  <br>
+  <br>
+  
+  
+
+{% endblock %}
+
+{% block content%}
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <div class="row" style="margin-top:20px; margin-left:20px">
+ 
+  
+       <h2>User Details</h2>
+       
+
+         <div class="col-6">
+       <br>
+       <br>
+       <br>
+      <table class="table table-hover table-dark">
+         <thead>
+
+         </thead>
+         <tbody>
+            
+            
+            <tr>
+               <th scope="col">Name</th>
+               <th scope="col">:</th>
+
+               <th scope="col">{{y.student_name}}</th>
+
+             </tr>
+
+              <tr>
+               <th scope="col">College Name</th>
+               <th scope="col">:</th>
+
+               <th scope="col">{{y.college_name}}</th>
+
+             </tr>
+
+             <tr>
+               <th scope="col">Specialistion </th>
+               <th scope="col">:</th>
+
+               <th scope="col">{{y.specialistion}}</th>
+
+             </tr>
+
+             <tr>
+               <th scope="col">Degree Name</th>
+               <th scope="col">:</th>
+
+               <th scope="col">{{y.degree_name}}</th>
+
+             </tr>
+
+             <tr>
+                <th scope="col">Internship</th>
+                <th scope="col">:</th>
+ 
+                <th scope="col">{{y.internship}}</th>
+ 
+              </tr>
+
+              <tr>
+                <th scope="col">Phone Number</th>
+                <th scope="col">:</th>
+ 
+                <th scope="col">{{y.phone_no}}</th>
+ 
+              </tr>
+
+              <tr>
+                <th scope="col">Email</th>
+                <th scope="col">:</th>
+ 
+                <th scope="col">{{y.email_address}}</th>
+ 
+              </tr>
+
+              <tr>
+                <th scope="col">Location</th>
+                <th scope="col">:</th>
+ 
+                <th scope="col">{{y.location}}</th>
+ 
+              </tr>
+
+              <tr>
+                <th scope="col">Gender</th>
+                <th scope="col">:</th>
+ 
+                <th scope="col">{{y.Gender}}</th>
+ 
+              </tr><tr>
+                <th scope="col">Note</th>
+                <th scope="col">:</th>
+ 
+                <th scope="col">{{y.note}}</th>
+ 
+              </tr>
+
+
+
+
+{% endblock %}

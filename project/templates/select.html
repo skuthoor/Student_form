@@ -1,0 +1,68 @@
+{% extends "basic.html" %}
+
+{% block title%}
+  
+  Registration Page
+
+{% endblock %}
+
+{% block content_title%}
+  
+  Registration Page
+
+{% endblock %}
+
+{% block content%}
+<br>
+<br>
+<br>
+<br>
+
+<body class="text-center">
+
+    <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h1>Select the type of User</h1>    
+        </header>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="400">
+              
+              <div class="text-center">
+                <!-- h3>Donor</h3> -->
+                <a class="btn btn-primary" href="{{ url_for('register_page') }}">Student Register</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="400">
+              
+              <div class="text-center">
+                <!-- <h3>Blood Bank Login</h3> -->
+                <!-- <a class="btn btn-primary" href="#"></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              
+              <div class="text-center">
+              
+                <!-- <h3>Doctor Login</h3> -->
+                <a class="btn btn-primary" href="{{ url_for('login_page') }}">User Login</a>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              
+</body>
+{% endblock %}
